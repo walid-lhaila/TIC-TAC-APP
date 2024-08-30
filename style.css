@@ -26,6 +26,19 @@ body {
     cursor: pointer;
     font-size: 25px;
   }
+
+
+.box.x {
+  background-color: rgb(44, 147, 243);
+  color: white;
+}
+
+.box.o {
+  background-color: rgb(241, 87, 87);
+  color: white;
+}
+
+
 .login {
   display: flex;
   flex-direction: column;
@@ -177,7 +190,7 @@ form button:hover {
   background-color: rgb(44, 147, 243);
   padding: 0px 30px;
 }
-.x {
+.playerX {
   background-color: white;
   padding: 0px 30px;
 }
@@ -185,7 +198,7 @@ form button:hover {
   background-color: rgb(241, 87, 87);
   padding: 0px 30px;
 }
-.o {
+.playerO {
   background-color: white;
   padding: 0px 30px;
 }
@@ -208,4 +221,59 @@ form button:hover {
    2px -2px 0 #000,
   -2px  2px 0 #000,
    2px  2px 0 #000; 
+  }
+
+  .scoreh1 {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  table {
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  table thead th {
+    color: white;
+    padding: 10px 0px;
+    font-size: 35px;
+    border: 3px solid white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  table tbody td {
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 20px;
+    border: 3px solid white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .scoreBackButton {
+    padding: 14px 60px;
+    color: white;
+    background-color: rgb(53, 48, 48);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+  }
+  .scoreBackButton:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+  }
+  #firstPlayerError {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #secondPlayerError {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
