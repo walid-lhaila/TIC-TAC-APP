@@ -7,16 +7,17 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('background.jpg'); 
+    background-image: url('img/background.jpg'); 
   }
 .container {
+  padding-top: 50px;
    display: grid;
    grid-template-columns: repeat(20,auto);
 }
 
 .box{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border: 1px solid #ffffff;
     box-shadow: 0 0 0 2px #ffffff;
     display: flex;
@@ -82,7 +83,7 @@ form button:hover {
 }
 
 .btnIndex {
-  padding-top: 60px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,26 +92,25 @@ form button:hover {
 
 .back {
   color: white;
-  font-size: 20px;
-  background-color: black;
-  padding: 15px 90px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  width: 80px;
   border: none;
-  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .back:hover {
-  background-color: #3f3535;
+  background-color: #c2c2c2fa;
   transition-duration: 0.5s
 }
 .again {
   color: white;
   font-size: 20px;
-  background-color: rgb(226, 23, 23);
-  padding: 15px 60px;
+  background-color: rgb(226, 66, 66);
   border: none;
-  border-radius: 10px;
+  width: 80px;
+  padding: 5px 10px;
   font-weight: bold;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -123,10 +123,10 @@ form button:hover {
 .historique{
   color: white;
   font-size: 20px;
-  background-color: rgb(21, 17, 228);
-  padding: 15px 60px;
+  width: 80px;
+  background-color: rgb(50, 47, 235);
+  padding: 5px 10px;
   border: none;
-  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -153,3 +153,59 @@ form button:hover {
   font-size: 20px;
   font-weight: bolder;
 }
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 50px;
+  padding-top: 30px;
+
+}
+.player1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.p1 {
+  background-color: rgb(44, 147, 243);
+  padding: 0px 30px;
+}
+.x {
+  background-color: white;
+  padding: 0px 30px;
+}
+.p2 {
+  background-color: rgb(241, 87, 87);
+  padding: 0px 30px;
+}
+.o {
+  background-color: white;
+  padding: 0px 30px;
+}
+.vs h1{
+  font-weight: 50px;
+  font-size: 50px;
+}
+.p1 h1 {
+  color: white;
+  text-shadow: 
+  -2px -2px 0 #000,  
+   2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000; 
+}
+.p2 h1 {
+  color: white;
+  text-shadow: 
+  -2px -2px 0 #000,  
+   2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000; 
+  }
