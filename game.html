@@ -11,7 +11,7 @@
     <div class="players">
         <div class="player1">
             <div class="p1">
-                <h1>LHAILA</h1>
+                <h1 id="player1Name">LHAILA</h1>
             </div>
             <div class="playerX">
                 <h1>X</h1>
@@ -23,16 +23,25 @@
                 <h1>O</h1>
             </div>
             <div class="p2">
-                <h1>GOUDALI</h1>
+                <h1 id="player2Name">GOUDALI</h1>
             </div>
         </div>
     </div>
-    <div class="container"></div>
+    <div class="container"></div>   
     <div class="btnIndex">
         <a href="login.html"><img src="img/back1.png" class="back"></a>
         <a href="score.html"><img src="img/historique1.png" class="historique"></a>
         <img id="replay" src="img/replay1.png" class="again">
     </div>
+<div class="overlay">
+    <div class="winnerCard">
+        <div class="cup">
+            <img src="img/cup.png" alt="trophy">
+        </div>
+        <h1>PLAYER X WIN'S</h1>
+        <button id="playAgain">Play Again</button>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

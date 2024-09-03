@@ -37,9 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (valid) {
                 let players = JSON.parse(localStorage.getItem('players')) || [];
+                
+                const lastId = players.length > 0 ? players[players.length - 1].id : 0;
 
-                players.push({ id: playerId++, name: playerName1, score: null });
-                players.push({ id: playerId++, name: playerName2, score: null });
+                players.push({ id: lastId + 1, name: playerName1, score: 0 });
+                players.push({ id: lastId + 2, name: playerName2, score: 0 });
 
                 localStorage.setItem('players', JSON.stringify(players));
 

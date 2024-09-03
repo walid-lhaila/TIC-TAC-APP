@@ -1,0 +1,37 @@
+
+
+@media (max-width: 600px) {
+   body {
+    background-color: red;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('img/background.jpg'); 
+    align-items: center;
+    
+   }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  form input {
+    width: 180px;
+    padding: 5px 60px;
+  }
+  .login {
+    width: 180px;
+  }
+  .login h1 {
+    font-size: 24px;
+  }
+  .login button {
+    padding: 5px 90px;
+  }
+
+
+}
